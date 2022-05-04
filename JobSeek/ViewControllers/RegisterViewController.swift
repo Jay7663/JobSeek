@@ -1,6 +1,9 @@
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, Storyboarded {
+    
+    // MARK: - Variables
+    var coordinator: AuthenticationCoordinator?
     
     // MARK: - Outlets
     @IBOutlet weak var txtFullName: BaseTextField!
@@ -15,7 +18,7 @@ class RegisterViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func btnLogIn(_ sender: UIButton) {
-        //TODO: - Push Login Controller
+        coordinator?.startLogIn()
     }
     
 } // End of Class

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C43C6998D1A5F5FF634A2C /* Pods_JobSeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74566F8A32D2346AC9B350F3 /* Pods_JobSeek.framework */; };
+		6412D76F282A33C5005B6AFC /* ButtonLinkString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412D76E282A33C5005B6AFC /* ButtonLinkString.swift */; };
 		64198E3C282145DD00CE44BA /* SignUpLogInButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64198E3B282145DD00CE44BA /* SignUpLogInButtons.swift */; };
 		64198E3E28214C8A00CE44BA /* LogInRegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64198E3D28214C8A00CE44BA /* LogInRegisterTextField.swift */; };
+		64198E4128215C4A00CE44BA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64198E4028215C4A00CE44BA /* LogInViewController.swift */; };
 		64555DA2281AC7190019CA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64555DA1281AC7190019CA37 /* AppDelegate.swift */; };
 		64555DA4281AC7190019CA37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64555DA3281AC7190019CA37 /* SceneDelegate.swift */; };
 		64555DA6281AC7190019CA37 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64555DA5281AC7190019CA37 /* RegisterViewController.swift */; };
@@ -17,9 +20,12 @@
 		64555DAE281AC71D0019CA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64555DAC281AC71D0019CA37 /* LaunchScreen.storyboard */; };
 		64555DB7281AC91C0019CA37 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64555DB6281AC91C0019CA37 /* BaseButton.swift */; };
 		64555DB9281ACC8C0019CA37 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64555DB8281ACC8C0019CA37 /* BaseTextField.swift */; };
-		648BA2702829612E00B62566 /* ButtonLinkString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648BA26F2829612E00B62566 /* ButtonLinkString.swift */; };
 		64953924281F957D00DD67AE /* BaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64953923281F957D00DD67AE /* BaseImage.swift */; };
 		64953950281FF7CD00DD67AE /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495394F281FF7CD00DD67AE /* BaseLabel.swift */; };
+		64C01D0A282A9BD600C996E1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C01D09282A9BD600C996E1 /* AppCoordinator.swift */; };
+		64C01D0C282A9C5C00C996E1 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C01D0B282A9C5C00C996E1 /* AuthenticationCoordinator.swift */; };
+		64C01D0E282A9C9C00C996E1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C01D0D282A9C9C00C996E1 /* Coordinator.swift */; };
+		64C01D10282A9E1100C996E1 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C01D0F282A9E1100C996E1 /* Storyboarded.swift */; };
 		64D3F7EF28212D700094BCC5 /* MainHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3F7EE28212D700094BCC5 /* MainHeading.swift */; };
 		64D3F7F128212DD60094BCC5 /* SecodaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3F7F028212DD60094BCC5 /* SecodaryLabel.swift */; };
 		64D3F7F3282131DB0094BCC5 /* ThirdLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3F7F2282131DB0094BCC5 /* ThirdLabel.swift */; };
@@ -42,15 +48,14 @@
 		64D3F8172821398F0094BCC5 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64D3F8042821398F0094BCC5 /* Poppins-LightItalic.ttf */; };
 		64D3F8182821398F0094BCC5 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64D3F8052821398F0094BCC5 /* Poppins-ExtraBold.ttf */; };
 		64D3F8192821398F0094BCC5 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64D3F8062821398F0094BCC5 /* Poppins-Bold.ttf */; };
-		B3FC0DFA318196638AE9B369 /* Pods_JobSeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F22D093664F94DC8C8FAFC /* Pods_JobSeek.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00F22D093664F94DC8C8FAFC /* Pods_JobSeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobSeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1300F47DF48787F8F21D6F1D /* Pods-JobSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobSeek.debug.xcconfig"; path = "Target Support Files/Pods-JobSeek/Pods-JobSeek.debug.xcconfig"; sourceTree = "<group>"; };
-		52245326D4CA1ACA6A2AAD38 /* Pods-JobSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobSeek.release.xcconfig"; path = "Target Support Files/Pods-JobSeek/Pods-JobSeek.release.xcconfig"; sourceTree = "<group>"; };
+		5E07438D0AD4ED8A9030FBFA /* Pods-JobSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobSeek.debug.xcconfig"; path = "Target Support Files/Pods-JobSeek/Pods-JobSeek.debug.xcconfig"; sourceTree = "<group>"; };
+		6412D76E282A33C5005B6AFC /* ButtonLinkString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonLinkString.swift; sourceTree = "<group>"; };
 		64198E3B282145DD00CE44BA /* SignUpLogInButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLogInButtons.swift; sourceTree = "<group>"; };
 		64198E3D28214C8A00CE44BA /* LogInRegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInRegisterTextField.swift; sourceTree = "<group>"; };
+		64198E4028215C4A00CE44BA /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		64555D9E281AC7190019CA37 /* JobSeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobSeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64555DA1281AC7190019CA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64555DA3281AC7190019CA37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +66,12 @@
 		64555DAF281AC71D0019CA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64555DB6281AC91C0019CA37 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		64555DB8281ACC8C0019CA37 /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
-		648BA26F2829612E00B62566 /* ButtonLinkString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonLinkString.swift; sourceTree = "<group>"; };
 		64953923281F957D00DD67AE /* BaseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImage.swift; sourceTree = "<group>"; };
 		6495394F281FF7CD00DD67AE /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		64C01D09282A9BD600C996E1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		64C01D0B282A9C5C00C996E1 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		64C01D0D282A9C9C00C996E1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		64C01D0F282A9E1100C996E1 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		64D3F7EE28212D700094BCC5 /* MainHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeading.swift; sourceTree = "<group>"; };
 		64D3F7F028212DD60094BCC5 /* SecodaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecodaryLabel.swift; sourceTree = "<group>"; };
 		64D3F7F2282131DB0094BCC5 /* ThirdLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLabel.swift; sourceTree = "<group>"; };
@@ -86,6 +94,8 @@
 		64D3F8042821398F0094BCC5 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		64D3F8052821398F0094BCC5 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		64D3F8062821398F0094BCC5 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		74566F8A32D2346AC9B350F3 /* Pods_JobSeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobSeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFFC438E18B0A97AA0DE865 /* Pods-JobSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobSeek.release.xcconfig"; path = "Target Support Files/Pods-JobSeek/Pods-JobSeek.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,17 +103,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FC0DFA318196638AE9B369 /* Pods_JobSeek.framework in Frameworks */,
+				13C43C6998D1A5F5FF634A2C /* Pods_JobSeek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		207E01B97F2C54A77AE4D52A /* Frameworks */ = {
+		2F800188A79E397E0CC2AB13 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				00F22D093664F94DC8C8FAFC /* Pods_JobSeek.framework */,
+				5E07438D0AD4ED8A9030FBFA /* Pods-JobSeek.debug.xcconfig */,
+				FCFFC438E18B0A97AA0DE865 /* Pods-JobSeek.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		451C88D51FBE53AF8A162996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74566F8A32D2346AC9B350F3 /* Pods_JobSeek.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				64555DA5281AC7190019CA37 /* RegisterViewController.swift */,
+				64198E4028215C4A00CE44BA /* LogInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -127,8 +147,8 @@
 		64198E3A282145B000CE44BA /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				648BA26F2829612E00B62566 /* ButtonLinkString.swift */,
 				64198E3B282145DD00CE44BA /* SignUpLogInButtons.swift */,
+				6412D76E282A33C5005B6AFC /* ButtonLinkString.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -146,8 +166,8 @@
 			children = (
 				64555DA0281AC7190019CA37 /* JobSeek */,
 				64555D9F281AC7190019CA37 /* Products */,
-				D59E17CCE29AB474015E1EF4 /* Pods */,
-				207E01B97F2C54A77AE4D52A /* Frameworks */,
+				2F800188A79E397E0CC2AB13 /* Pods */,
+				451C88D51FBE53AF8A162996 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +182,7 @@
 		64555DA0281AC7190019CA37 /* JobSeek */ = {
 			isa = PBXGroup;
 			children = (
+				64C01D08282A9BB300C996E1 /* Coordinators */,
 				64198E3928213E9F00CE44BA /* ViewControllers */,
 				64198E3828213E6700CE44BA /* Storyboards */,
 				64555DB5281AC8EC0019CA37 /* CustomControls */,
@@ -215,6 +236,17 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		64C01D08282A9BB300C996E1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				64C01D09282A9BD600C996E1 /* AppCoordinator.swift */,
+				64C01D0B282A9C5C00C996E1 /* AuthenticationCoordinator.swift */,
+				64C01D0D282A9C9C00C996E1 /* Coordinator.swift */,
+				64C01D0F282A9E1100C996E1 /* Storyboarded.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		64D3F7ED28212D260094BCC5 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,15 +257,6 @@
 			path = Labels;
 			sourceTree = "<group>";
 		};
-		D59E17CCE29AB474015E1EF4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1300F47DF48787F8F21D6F1D /* Pods-JobSeek.debug.xcconfig */,
-				52245326D4CA1ACA6A2AAD38 /* Pods-JobSeek.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,11 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64555DB2281AC71D0019CA37 /* Build configuration list for PBXNativeTarget "JobSeek" */;
 			buildPhases = (
-				CC884D566AD3655A841F377B /* [CP] Check Pods Manifest.lock */,
+				2CCBF91883F99E7F0619672F /* [CP] Check Pods Manifest.lock */,
 				64555D9A281AC7190019CA37 /* Sources */,
 				64555D9B281AC7190019CA37 /* Frameworks */,
 				64555D9C281AC7190019CA37 /* Resources */,
-				9BE7CD9ECACC3BAC9CFDB809 /* [CP] Embed Pods Frameworks */,
+				1C035EA3755EE8E4CC5E4C10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,7 +345,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9BE7CD9ECACC3BAC9CFDB809 /* [CP] Embed Pods Frameworks */ = {
+		1C035EA3755EE8E4CC5E4C10 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,7 +362,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobSeek/Pods-JobSeek-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC884D566AD3655A841F377B /* [CP] Check Pods Manifest.lock */ = {
+		2CCBF91883F99E7F0619672F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,16 +393,21 @@
 			files = (
 				64555DB7281AC91C0019CA37 /* BaseButton.swift in Sources */,
 				64198E3C282145DD00CE44BA /* SignUpLogInButtons.swift in Sources */,
+				6412D76F282A33C5005B6AFC /* ButtonLinkString.swift in Sources */,
 				64D3F7EF28212D700094BCC5 /* MainHeading.swift in Sources */,
 				64953950281FF7CD00DD67AE /* BaseLabel.swift in Sources */,
+				64C01D10282A9E1100C996E1 /* Storyboarded.swift in Sources */,
 				64555DA6281AC7190019CA37 /* RegisterViewController.swift in Sources */,
-				648BA2702829612E00B62566 /* ButtonLinkString.swift in Sources */,
 				64555DA2281AC7190019CA37 /* AppDelegate.swift in Sources */,
+				64198E4128215C4A00CE44BA /* LogInViewController.swift in Sources */,
 				64198E3E28214C8A00CE44BA /* LogInRegisterTextField.swift in Sources */,
 				64953924281F957D00DD67AE /* BaseImage.swift in Sources */,
+				64C01D0E282A9C9C00C996E1 /* Coordinator.swift in Sources */,
 				64555DA4281AC7190019CA37 /* SceneDelegate.swift in Sources */,
 				64555DB9281ACC8C0019CA37 /* BaseTextField.swift in Sources */,
+				64C01D0A282A9BD600C996E1 /* AppCoordinator.swift in Sources */,
 				64D3F7F3282131DB0094BCC5 /* ThirdLabel.swift in Sources */,
+				64C01D0C282A9C5C00C996E1 /* AuthenticationCoordinator.swift in Sources */,
 				64D3F7F128212DD60094BCC5 /* SecodaryLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,7 +552,7 @@
 		};
 		64555DB3281AC71D0019CA37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1300F47DF48787F8F21D6F1D /* Pods-JobSeek.debug.xcconfig */;
+			baseConfigurationReference = 5E07438D0AD4ED8A9030FBFA /* Pods-JobSeek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -552,7 +580,7 @@
 		};
 		64555DB4281AC71D0019CA37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52245326D4CA1ACA6A2AAD38 /* Pods-JobSeek.release.xcconfig */;
+			baseConfigurationReference = FCFFC438E18B0A97AA0DE865 /* Pods-JobSeek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

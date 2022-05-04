@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FSk-xI-vEN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -9,16 +10,16 @@
         <!--Register View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RegisterViewController" customModule="JobSeek" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RegisterViewController" customModule="JobSeek" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OY-E5-m3B" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6e-hq-FP0" userLabel="InnerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="707"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="694"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="U9r-go-03L">
                                                 <rect key="frame" x="21.5" y="8" width="99" height="40"/>
@@ -41,10 +42,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VkL-wF-MuT" userLabel="TextFields">
-                                                <rect key="frame" x="24" y="135" width="552" height="256"/>
+                                                <rect key="frame" x="24" y="135" width="366" height="256"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-Wr-xXX" customClass="LogInRegisterTextField" customModule="JobSeek" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="552" height="52"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="nq9-lA-84H"/>
                                                         </constraints>
@@ -59,7 +60,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5c7-1a-Eww" customClass="LogInRegisterTextField" customModule="JobSeek" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="68" width="552" height="52"/>
+                                                        <rect key="frame" x="0.0" y="68" width="366" height="52"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                                                         <userDefinedRuntimeAttributes>
@@ -71,7 +72,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LWH-Yn-Ymr" customClass="LogInRegisterTextField" customModule="JobSeek" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="136" width="552" height="52"/>
+                                                        <rect key="frame" x="0.0" y="136" width="366" height="52"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
@@ -84,7 +85,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYc-W8-h5g" customClass="LogInRegisterTextField" customModule="JobSeek" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="204" width="552" height="52"/>
+                                                        <rect key="frame" x="0.0" y="204" width="366" height="52"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
@@ -99,7 +100,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziL-QJ-fGK" customClass="SignUpLogInButtons" customModule="JobSeek" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="423" width="552" height="56"/>
+                                                <rect key="frame" x="24" y="423" width="366" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="4RT-a0-MBn"/>
                                                 </constraints>
@@ -112,13 +113,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fus-kN-klc" userLabel="DividerLabel">
-                                                <rect key="frame" x="24" y="511" width="552" height="16"/>
+                                                <rect key="frame" x="24" y="511" width="366" height="16"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="BdB-WN-m7v">
                                                         <rect key="frame" x="0.0" y="0.0" width="98" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or continue with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeT-UX-fLK" customClass="ThirdLabel" customModule="JobSeek" customModuleProvider="target">
-                                                        <rect key="frame" x="226" y="0.0" width="100" height="16"/>
+                                                        <rect key="frame" x="133" y="0.0" width="100" height="16"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -130,12 +131,12 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="1oZ-aZ-azi">
-                                                        <rect key="frame" x="454" y="0.0" width="98" height="16"/>
+                                                        <rect key="frame" x="268" y="0.0" width="98" height="16"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qJp-sY-MiB" userLabel="RegisterOptions">
-                                                <rect key="frame" x="200" y="559" width="200" height="56"/>
+                                                <rect key="frame" x="107" y="559" width="200" height="56"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi2-hH-yE4">
                                                         <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -159,11 +160,11 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dP-RN-fNg" customClass="ButtonLinkString" customModule="JobSeek" customModuleProvider="target">
-                                                <rect key="frame" x="266.5" y="647" width="67" height="31"/>
+                                                <rect key="frame" x="116" y="647" width="182" height="18"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Haven’t an account? "/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Have an account? "/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="link" value="Log in"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -236,7 +237,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FSk-xI-vEN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hlo-vB-BZR">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -248,7 +249,270 @@
             </objects>
             <point key="canvasLocation" x="28" y="83.497536945812811"/>
         </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="Xec-M1-LGo">
+            <objects>
+                <viewController storyboardIdentifier="LogInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gLt-yq-6tW" customClass="LogInViewController" customModule="JobSeek" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4lp-iZ-Gu7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBV-Zs-wqg" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGl-7s-JqX" userLabel="InnerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="pOi-2J-w4b">
+                                                <rect key="frame" x="21.5" y="8" width="99" height="40"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hvT-HS-3ld" userLabel="Labels">
+                                                <rect key="frame" x="24" y="57.5" width="210" height="56.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back 👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUO-La-HCP" customClass="MainHeading" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="32.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s login. Apply to jobs!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZD5-h0-Wqi" customClass="SecodaryLabel" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="39.5" width="162.5" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.69019607839999997" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XnX-IP-VZE" userLabel="TextFields">
+                                                <rect key="frame" x="24" y="161" width="366" height="120"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9S-4R-hSu" customClass="LogInRegisterTextField" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="52"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="52" id="cbK-DQ-WLM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textHint" value="Email"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="mail"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="gLt-yq-6tW" id="5ji-5k-awE"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klc-vc-3SL" customClass="LogInRegisterTextField" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="68" width="366" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textHint" value="Password"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="password"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="endImage" value="Eye"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="gLt-yq-6tW" id="4XA-HZ-dQs"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENw-xt-FkU" customClass="SignUpLogInButtons" customModule="JobSeek" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="313" width="366" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="iTJ-1E-bgp"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Log in"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackground">
+                                                        <color key="value" red="0.054901960780000002" green="0.61568627450000002" blue="0.3411764706" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaf-Sa-efl" customClass="ButtonLinkString" customModule="JobSeek" customModuleProvider="target">
+                                                <rect key="frame" x="137.5" y="409" width="139.5" height="18"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="link" value="Forgot Password?"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-PS-d4T" userLabel="DividerLabel">
+                                                <rect key="frame" x="24" y="475" width="366" height="16"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="9P5-Qm-A2L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="98" height="16"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or continue with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abg-cn-qsf" customClass="ThirdLabel" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="133" y="0.0" width="100" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Or continue with"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="LabelTextSize">
+                                                                <real key="value" value="13"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="q7C-Vr-SBF">
+                                                        <rect key="frame" x="268" y="0.0" width="98" height="16"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="c2b-pE-cdT" userLabel="RegisterOptions">
+                                                <rect key="frame" x="107" y="539" width="200" height="56"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIj-hH-5Tb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="56" id="Zar-yq-S07"/>
+                                                            <constraint firstAttribute="height" constant="56" id="jU7-9D-1bM"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="Apple"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zk-vR-wT9">
+                                                        <rect key="frame" x="72" y="0.0" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="Google"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccK-yJ-xKW">
+                                                        <rect key="frame" x="144" y="0.0" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="Facebook"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9A-Kn-wmy" customClass="ButtonLinkString" customModule="JobSeek" customModuleProvider="target">
+                                                <rect key="frame" x="100.5" y="643" width="213" height="18"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Haven’t an account? "/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="link" value="Register"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnRegister:" destination="gLt-yq-6tW" eventType="touchUpInside" id="39T-jL-OOK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="y9A-Kn-wmy" firstAttribute="centerX" secondItem="tGl-7s-JqX" secondAttribute="centerX" id="1fT-pX-vM3"/>
+                                            <constraint firstItem="hvT-HS-3ld" firstAttribute="top" secondItem="pOi-2J-w4b" secondAttribute="bottom" constant="9.6099999999999994" id="3Fm-JH-dVE"/>
+                                            <constraint firstItem="c2b-pE-cdT" firstAttribute="top" secondItem="ejo-PS-d4T" secondAttribute="bottom" constant="48" id="7W2-g2-xCa"/>
+                                            <constraint firstItem="pOi-2J-w4b" firstAttribute="top" secondItem="tGl-7s-JqX" secondAttribute="top" constant="8" id="9BR-Rk-Qi3"/>
+                                            <constraint firstItem="XnX-IP-VZE" firstAttribute="leading" secondItem="tGl-7s-JqX" secondAttribute="leading" constant="24" id="CQk-oo-brX"/>
+                                            <constraint firstAttribute="trailing" secondItem="XnX-IP-VZE" secondAttribute="trailing" constant="24" id="CwY-bf-7kM"/>
+                                            <constraint firstItem="ENw-xt-FkU" firstAttribute="trailing" secondItem="XnX-IP-VZE" secondAttribute="trailing" id="Djg-LJ-JTi"/>
+                                            <constraint firstItem="hvT-HS-3ld" firstAttribute="leading" secondItem="tGl-7s-JqX" secondAttribute="leading" constant="24" id="Eif-Se-qtZ"/>
+                                            <constraint firstItem="ENw-xt-FkU" firstAttribute="leading" secondItem="XnX-IP-VZE" secondAttribute="leading" id="I49-x0-QXK"/>
+                                            <constraint firstItem="ejo-PS-d4T" firstAttribute="leading" secondItem="ENw-xt-FkU" secondAttribute="leading" id="OZI-s1-iQC"/>
+                                            <constraint firstAttribute="bottom" secondItem="y9A-Kn-wmy" secondAttribute="bottom" constant="9.6600000000000001" id="Pa6-TQ-EQp"/>
+                                            <constraint firstItem="ejo-PS-d4T" firstAttribute="top" secondItem="Vaf-Sa-efl" secondAttribute="bottom" constant="48" id="Rkd-ay-RYI"/>
+                                            <constraint firstItem="y9A-Kn-wmy" firstAttribute="top" secondItem="c2b-pE-cdT" secondAttribute="bottom" constant="48" id="ZNU-SK-Jyn"/>
+                                            <constraint firstItem="pOi-2J-w4b" firstAttribute="leading" secondItem="tGl-7s-JqX" secondAttribute="leading" constant="21.710000000000001" id="gcd-Ig-6nx"/>
+                                            <constraint firstItem="ejo-PS-d4T" firstAttribute="trailing" secondItem="ENw-xt-FkU" secondAttribute="trailing" id="iv4-Wc-v1B"/>
+                                            <constraint firstItem="Vaf-Sa-efl" firstAttribute="centerX" secondItem="tGl-7s-JqX" secondAttribute="centerX" id="jUv-iz-Qrk"/>
+                                            <constraint firstItem="c2b-pE-cdT" firstAttribute="centerX" secondItem="tGl-7s-JqX" secondAttribute="centerX" id="pHx-co-wzZ"/>
+                                            <constraint firstItem="ENw-xt-FkU" firstAttribute="top" secondItem="XnX-IP-VZE" secondAttribute="bottom" constant="32" id="pyW-3T-9RA"/>
+                                            <constraint firstItem="Vaf-Sa-efl" firstAttribute="top" secondItem="ENw-xt-FkU" secondAttribute="bottom" constant="40" id="rfb-mo-J1Y"/>
+                                            <constraint firstItem="XnX-IP-VZE" firstAttribute="top" secondItem="hvT-HS-3ld" secondAttribute="bottom" constant="47" id="xiM-WI-oyk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tGl-7s-JqX" secondAttribute="bottom" id="Cf5-Hd-YTL"/>
+                                    <constraint firstItem="tGl-7s-JqX" firstAttribute="width" secondItem="QBV-Zs-wqg" secondAttribute="width" id="QXd-jS-Ph1"/>
+                                    <constraint firstItem="tGl-7s-JqX" firstAttribute="top" secondItem="QBV-Zs-wqg" secondAttribute="top" id="UnL-Nv-lP2"/>
+                                    <constraint firstItem="tGl-7s-JqX" firstAttribute="leading" secondItem="QBV-Zs-wqg" secondAttribute="leading" id="Xqg-34-puO"/>
+                                    <constraint firstAttribute="trailing" secondItem="tGl-7s-JqX" secondAttribute="trailing" id="csW-pz-irq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wn1-Xa-6qw"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wn1-Xa-6qw" firstAttribute="trailing" secondItem="QBV-Zs-wqg" secondAttribute="trailing" id="6gE-us-Fsg"/>
+                            <constraint firstItem="QBV-Zs-wqg" firstAttribute="leading" secondItem="Wn1-Xa-6qw" secondAttribute="leading" id="c5O-GR-mjP"/>
+                            <constraint firstItem="Wn1-Xa-6qw" firstAttribute="bottom" secondItem="QBV-Zs-wqg" secondAttribute="bottom" id="f7C-4J-G7v"/>
+                            <constraint firstItem="QBV-Zs-wqg" firstAttribute="centerX" secondItem="Wn1-Xa-6qw" secondAttribute="centerX" id="iRn-bU-N10"/>
+                            <constraint firstItem="QBV-Zs-wqg" firstAttribute="top" secondItem="Wn1-Xa-6qw" secondAttribute="top" id="k2b-XL-SLH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="33v-B7-iWP">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="chevron.left" catalog="system" id="8Ga-ge-9on">
+                            <color key="tintColor" red="0.050980392159999999" green="0.050980392159999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnBack:" destination="gLt-yq-6tW" id="JWg-Zj-oYd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="d9S-4R-hSu" id="9SO-Df-VfT"/>
+                        <outlet property="txtPassword" destination="klc-vc-3SL" id="24b-x3-ptd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i70-iX-sNh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="83"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="4dP-RN-fNg">
+            <size key="intrinsicContentSize" width="182" height="31"/>
+        </designable>
+        <designable name="5c7-1a-Eww">
+            <size key="intrinsicContentSize" width="109" height="34"/>
+        </designable>
+        <designable name="Abg-cn-qsf">
+            <size key="intrinsicContentSize" width="100" height="16"/>
+        </designable>
+        <designable name="ENw-xt-FkU">
+            <size key="intrinsicContentSize" width="42" height="30"/>
+        </designable>
+        <designable name="Fxe-hS-pyH">
+            <size key="intrinsicContentSize" width="183.5" height="17"/>
+        </designable>
+        <designable name="Kgs-Wr-xXX">
+            <size key="intrinsicContentSize" width="134.5" height="34"/>
+        </designable>
+        <designable name="LWH-Yn-Ymr">
+            <size key="intrinsicContentSize" width="132.5" height="34"/>
+        </designable>
+        <designable name="MYj-v7-QcC">
+            <size key="intrinsicContentSize" width="151" height="29"/>
+        </designable>
+        <designable name="Vaf-Sa-efl">
+            <size key="intrinsicContentSize" width="139.5" height="31"/>
+        </designable>
+        <designable name="ZD5-h0-Wqi">
+            <size key="intrinsicContentSize" width="162.5" height="17"/>
+        </designable>
+        <designable name="d9S-4R-hSu">
+            <size key="intrinsicContentSize" width="109" height="34"/>
+        </designable>
+        <designable name="fUO-La-HCP">
+            <size key="intrinsicContentSize" width="210" height="32.5"/>
+        </designable>
+        <designable name="klc-vc-3SL">
+            <size key="intrinsicContentSize" width="132.5" height="34"/>
+        </designable>
+        <designable name="qeT-UX-fLK">
+            <size key="intrinsicContentSize" width="100" height="16"/>
+        </designable>
+        <designable name="xYc-W8-h5g">
+            <size key="intrinsicContentSize" width="193" height="34"/>
+        </designable>
+        <designable name="y9A-Kn-wmy">
+            <size key="intrinsicContentSize" width="213" height="31"/>
+        </designable>
+        <designable name="ziL-QJ-fGK">
+            <size key="intrinsicContentSize" width="57" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Apple" width="96" height="96"/>
         <image name="Eye" width="23" height="15"/>
