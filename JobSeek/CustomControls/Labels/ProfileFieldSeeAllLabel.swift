@@ -1,22 +1,22 @@
 import UIKit
 
-/// Authentication Screen sceparater for Options
-class ThirdLabel: BaseLabel {
-    
+/// Profile Fields SeeAll
+class ProfileFieldSeeAllLabel: BaseLabel {
+
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        LabelProperties()
+        labelProperties()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        LabelProperties()
+        labelProperties()
     }
     
     // MARK: - Functions
-    func LabelProperties(){
-        textColor = UIColor(named: "TFTintColor")
+    func labelProperties() {
+        textColor = UIColor(named: "Grey-70")
         self.font = UIFont(name: "Poppins-Regular", size: 13)
     }
     

@@ -1,21 +1,21 @@
 import UIKit
 
 /// Authentication Screen Main Heading
-class MainHeading: BaseLabel {
+class MainHeadingLabel: BaseLabel {
     
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        LabelProperties()
+        labelProperties()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        LabelProperties()
+        labelProperties()
     }
     
     // MARK: - Functions
-    func LabelProperties() {
+    func labelProperties() {
         self.textColor = UIColor(red: 0.05, green: 0.05, blue: 0.15, alpha: 1)
         self.font = UIFont(name: "Poppins-SemiBold", size: 28)
     }

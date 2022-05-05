@@ -1,8 +1,8 @@
 import UIKit
 
-/// Authentication Screen sub heading
-class SecodaryLabel: BaseLabel {
-    
+/// Profile scrores (Strings) label
+class ProfileScoresStringLabel: BaseLabel {
+
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -16,8 +16,8 @@ class SecodaryLabel: BaseLabel {
     
     // MARK: - Functions
     func labelProperties() {
-        textColor = UIColor(named: "TFTintColor")
-        self.font = UIFont(name: "Poppins-Regular", size: 15)
+        textColor = UIColor(named: "Grey-60")
+        self.font = UIFont(name: "Poppins-Medium", size: 12)
     }
     
 } // End of Class

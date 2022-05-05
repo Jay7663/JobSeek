@@ -1,8 +1,8 @@
 import UIKit
 
-/// Authentication Screen sub heading
-class SecodaryLabel: BaseLabel {
-    
+/// Profile Field Resume title
+class ProfileFieldResumeTitleLabel: BaseLabel {
+
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -16,8 +16,8 @@ class SecodaryLabel: BaseLabel {
     
     // MARK: - Functions
     func labelProperties() {
-        textColor = UIColor(named: "TFTintColor")
-        self.font = UIFont(name: "Poppins-Regular", size: 15)
+        textColor = UIColor(named: "TFTextColor")
+        self.font = UIFont(name: "Poppins-Bold", size: 11)
     }
     
 } // End of Class

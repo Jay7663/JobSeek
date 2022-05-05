@@ -1,7 +1,7 @@
 import UIKit
 
-/// Authentication Screen sub heading
-class SecodaryLabel: BaseLabel {
+/// Authentication Screen sceparater for Options
+class DividerLabel: BaseLabel {
     
     // MARK: - Initializers
     override init(frame: CGRect) {
@@ -17,7 +17,7 @@ class SecodaryLabel: BaseLabel {
     // MARK: - Functions
     func labelProperties() {
         textColor = UIColor(named: "TFTintColor")
-        self.font = UIFont(name: "Poppins-Regular", size: 15)
+        self.font = UIFont(name: "Poppins-Regular", size: 13)
     }
     
 } // End of Class
