@@ -23,6 +23,10 @@ class LogInViewController: UIViewController, Storyboarded {
         coordinator?.popViewController()
     }
     
+    @IBAction func btnLogIn(_ sender: SignUpLogInButtons) {
+        coordinator?.startProfile()
+    }
+    
 } // End of Class
 
 // MARK: - UITextFieldDelegate

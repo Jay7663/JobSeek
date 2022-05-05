@@ -22,6 +22,13 @@ class AuthenticationCoordinator: Coordinator {
         navController?.pushViewController(logInVC, animated: true)
     }
     
+    func startProfile() {
+        if let navController = navController {
+            let profileVC = ProfileCoordinator(navController)
+            profileVC.start()
+        }
+    }
+    
     func popViewController() {
         navController?.popViewController(animated: true)
     }

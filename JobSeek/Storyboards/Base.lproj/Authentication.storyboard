@@ -328,6 +328,9 @@
                                                         <color key="value" red="0.054901960780000002" green="0.61568627450000002" blue="0.3411764706" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnLogIn:" destination="gLt-yq-6tW" eventType="touchUpInside" id="34U-gg-ihe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaf-Sa-efl" customClass="ButtonLinkString" customModule="JobSeek" customModuleProvider="target">
                                                 <rect key="frame" x="137.5" y="409" width="139.5" height="18"/>
