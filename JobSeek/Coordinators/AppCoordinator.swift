@@ -11,8 +11,8 @@ class AppCoordinator: Coordinator {
     
     func start() {
         if let navController = navController {
-            let mainVC = AuthenticationCoordinator(navController)
-            mainVC.start()
+            let onBoardingVC = OnBoardingCoordinator(navController)
+            onBoardingVC.start()
         }
     }
     
