@@ -17,7 +17,7 @@ class SecodaryLabel: BaseLabel {
     // MARK: - Functions
     func LabelProperties(){
         textColor = UIColor(named: "TFTintColor")
-        self.font = UIFont(name: "Poppins-Regular", size: 14)
+        self.font = UIFont(name: "Poppins-Regular", size: 15)
     }
     
 } // End of Class

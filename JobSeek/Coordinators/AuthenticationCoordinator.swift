@@ -12,6 +12,7 @@ class AuthenticationCoordinator: Coordinator {
     func start() {
         let registerVC = RegisterViewController.instantiate(from: .authentication)
         registerVC.coordinator = self
+        navController?.viewControllers = []
         navController?.pushViewController(registerVC, animated: true)
     }
     
@@ -31,4 +32,4 @@ class AuthenticationCoordinator: Coordinator {
     func finishToRoot() {
     }
     
-}//End of class
+} //End of class
