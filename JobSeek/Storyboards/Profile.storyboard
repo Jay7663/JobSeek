@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3fv-xN-LmH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="JobSeek" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzM-L4-gHb">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ik-1Z-e3T">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="672.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="afw-hl-pC0" userLabel="Profile">
+                                                <rect key="frame" x="248" y="0.0" width="104" height="154.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_pic" translatesAutoresizingMaskIntoConstraints="NO" id="pF3-vX-42n" customClass="BaseImage" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                                        <color key="backgroundColor" name="ProfilePicBG"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="104" id="YTk-oD-zYo"/>
+                                                            <constraint firstAttribute="width" constant="104" id="ivn-eu-R26"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedImage" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haley Jessica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYa-CC-Ir7" customClass="ProfileNameLabel" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="113" width="104" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="E2x-m1-U8d">
+                                                        <rect key="frame" x="8.5" y="142.5" width="87" height="12"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UX Designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8n-MS-PBS" customClass="ProfileDesignationLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="71" height="12"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" name="Grey-60"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Verified_Profile" translatesAutoresizingMaskIntoConstraints="NO" id="cPU-bN-6M5">
+                                                                <rect key="frame" x="75" y="0.0" width="12" height="12"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="12" id="Kgm-0f-gyO"/>
+                                                                    <constraint firstAttribute="height" constant="12" id="RrK-NA-JIz"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-7k-C0d">
+                                                <rect key="frame" x="48" y="194.5" width="504" height="43"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="5cT-MD-BxZ" userLabel="1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxb-Hz-HjB" customClass="ProfileScoresDigitLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="63" y="0.0" width="18.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" name="SemiBlack"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Applied" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="US6-FO-Sce" customClass="ProfileScoresStringLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="50.5" y="28.5" width="43" height="14.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" name="Grey-60"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="5Gi-WE-bOY" userLabel="2">
+                                                        <rect key="frame" x="180" y="0.0" width="144" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4Z-CJ-Ras" customClass="ProfileScoresDigitLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="63.5" y="0.0" width="17" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" name="SemiBlack"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviewed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4X-fl-S1K" customClass="ProfileScoresStringLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="45" y="28.5" width="54.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" name="Grey-60"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="oHA-3r-nuE" userLabel="3">
+                                                        <rect key="frame" x="360" y="0.0" width="144" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUM-gt-git" customClass="ProfileScoresDigitLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="63.5" y="0.0" width="17.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" name="SemiBlack"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uv-y1-uUt" customClass="ProfileScoresStringLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="46" y="28.5" width="52" height="14.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" name="Grey-60"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cGh-X0-beC" userLabel="Exprience">
+                                                <rect key="frame" x="24" y="277.5" width="552" height="104.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="qmV-xE-cmg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="552" height="19.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgg-m5-zz4" customClass="ProfileFieldsHeadingLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-47-GFx" customClass="ProfileFieldSeeAllLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="511.5" y="0.0" width="40.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <color key="textColor" name="Grey-70"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAB-3u-VMc">
+                                                        <rect key="frame" x="0.0" y="31.5" width="552" height="73"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spotify" translatesAutoresizingMaskIntoConstraints="NO" id="b3K-Ba-lZh">
+                                                                <rect key="frame" x="24" y="15" width="43" height="43"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="43" id="GWd-pD-SgY"/>
+                                                                    <constraint firstAttribute="height" constant="43" id="dZW-C5-uVE"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5XR-s8-epX">
+                                                                <rect key="frame" x="83" y="18" width="64" height="37"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UX Intern" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7B-Fd-ErK" customClass="ProfileFieldTitleLeftLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ1-hF-s6i" customClass="ProfileFieldSubtitleLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="21" width="43.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <color key="textColor" name="SemiBlack"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1sP-uP-OmI">
+                                                                <rect key="frame" x="431" y="20" width="97" height="33.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Jose, US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKJ-og-q44" customClass="ProfileFieldTitleRightLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                        <rect key="frame" x="20.5" y="0.0" width="76.5" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec 20 - Feb 21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWe-5X-vHQ" customClass="ProfileFieldSubtitleLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="17.5" width="97" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <color key="textColor" name="SemiBlack"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="5XR-s8-epX" firstAttribute="leading" secondItem="b3K-Ba-lZh" secondAttribute="trailing" constant="16" id="0yR-as-6Jw"/>
+                                                            <constraint firstAttribute="bottom" secondItem="b3K-Ba-lZh" secondAttribute="bottom" constant="15" id="2po-x9-Cg2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1sP-uP-OmI" secondAttribute="trailing" constant="24" id="Fbw-VY-kdX"/>
+                                                            <constraint firstItem="5XR-s8-epX" firstAttribute="centerY" secondItem="b3K-Ba-lZh" secondAttribute="centerY" id="NBY-0i-Oz1"/>
+                                                            <constraint firstItem="1sP-uP-OmI" firstAttribute="centerY" secondItem="5XR-s8-epX" secondAttribute="centerY" id="aEg-hb-esn"/>
+                                                            <constraint firstItem="b3K-Ba-lZh" firstAttribute="top" secondItem="pAB-3u-VMc" secondAttribute="top" constant="15" id="h5C-3v-Kdb"/>
+                                                            <constraint firstItem="b3K-Ba-lZh" firstAttribute="leading" secondItem="pAB-3u-VMc" secondAttribute="leading" constant="24" id="vai-nE-S43"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="boe-Fe-hXO" userLabel="Education">
+                                                <rect key="frame" x="24" y="414" width="552" height="104.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="flV-pr-Cjz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="552" height="19.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Education" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFm-bO-MCy" customClass="ProfileFieldsHeadingLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="76" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4I0-1f-xmT" customClass="ProfileFieldSeeAllLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="511.5" y="0.0" width="40.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <color key="textColor" name="Grey-70"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6t-ny-9bD">
+                                                        <rect key="frame" x="0.0" y="31.5" width="552" height="73"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Education" translatesAutoresizingMaskIntoConstraints="NO" id="KNS-9a-28l">
+                                                                <rect key="frame" x="24" y="15" width="43" height="43"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="43" id="0x1-Or-67v"/>
+                                                                    <constraint firstAttribute="width" constant="43" id="8sC-la-qPT"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Wav-KH-bUy">
+                                                                <rect key="frame" x="83" y="18" width="124.5" height="37"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-ZB-7pu" customClass="ProfileFieldTitleLeftLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bachelor | Caltech" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWh-VW-6Mz" customClass="ProfileFieldSubtitleLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="21" width="110.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <color key="textColor" name="SemiBlack"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="YYE-35-iEZ">
+                                                                <rect key="frame" x="453.5" y="20" width="74.5" height="33.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pasadena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVA-Tl-MOP" customClass="ProfileFieldTitleRightLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                        <rect key="frame" x="18" y="0.0" width="56.5" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017 - 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sk8-XV-bc3" customClass="ProfileFieldSubtitleLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="17.5" width="74.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <color key="textColor" name="SemiBlack"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Wav-KH-bUy" firstAttribute="leading" secondItem="KNS-9a-28l" secondAttribute="trailing" constant="16" id="CDi-4q-2cW"/>
+                                                            <constraint firstItem="Wav-KH-bUy" firstAttribute="centerY" secondItem="KNS-9a-28l" secondAttribute="centerY" id="Cic-vZ-jIm"/>
+                                                            <constraint firstAttribute="trailing" secondItem="YYE-35-iEZ" secondAttribute="trailing" constant="24" id="EX2-sH-nbm"/>
+                                                            <constraint firstItem="KNS-9a-28l" firstAttribute="top" secondItem="K6t-ny-9bD" secondAttribute="top" constant="15" id="Fb1-6i-5gf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="KNS-9a-28l" secondAttribute="bottom" constant="15" id="RiY-eV-pCl"/>
+                                                            <constraint firstItem="KNS-9a-28l" firstAttribute="leading" secondItem="K6t-ny-9bD" secondAttribute="leading" constant="24" id="WSu-ie-Fo4"/>
+                                                            <constraint firstItem="YYE-35-iEZ" firstAttribute="centerY" secondItem="Wav-KH-bUy" secondAttribute="centerY" id="aFm-lA-2pT"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="54K-19-5IC">
+                                                <rect key="frame" x="24" y="551.5" width="552" height="19.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Resume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-5W-rg5" customClass="ProfileFieldsHeadingLabel" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a resume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3T-aT-egl">
+                                                        <rect key="frame" x="460" y="0.0" width="92" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="buttonBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWe-sr-ZFQ">
+                                                <rect key="frame" x="24" y="583" width="552" height="79.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="RCH-aB-2pP">
+                                                        <rect key="frame" x="24" y="8" width="504" height="14"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CV" translatesAutoresizingMaskIntoConstraints="NO" id="aAF-9i-Q3N">
+                                                                <rect key="frame" x="0.0" y="0.0" width="32" height="14"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="32" id="3QK-3Q-BSi"/>
+                                                                    <constraint firstAttribute="height" constant="14" id="5ba-k5-Yyh"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haley Jessica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sx-Ue-XeJ" customClass="ProfileFieldResumeTitleLabel" customModule="JobSeek" customModuleProvider="target">
+                                                                <rect key="frame" x="214.5" y="0.0" width="75" height="14"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PDF" translatesAutoresizingMaskIntoConstraints="NO" id="TuA-IS-CUV">
+                                                                <rect key="frame" x="472" y="0.0" width="32" height="14"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="32" id="ChP-hy-3Tf"/>
+                                                                    <constraint firstAttribute="height" constant="14" id="xqi-ed-omt"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JB-5d-tS6" customClass="ProfileFieldResumeDescriptionLabel" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="24" y="44" width="504" height="25.5"/>
+                                                        <string key="text">Creative UX Designer with 6+ years of experience in optimizing user experience through innovative solutions and dynamic interface designs. Successful in enhancing user engagement for well-known brands, providing a compelling user experience to improve brand loyalty and customer retention.  </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UX Designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81x-zY-5fV" customClass="ProfileFieldResumeSubtitleLabel" customModule="JobSeek" customModuleProvider="target">
+                                                        <rect key="frame" x="251" y="24" width="50" height="10"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                        <color key="textColor" name="OnBoardingSecondaryLbl"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="RCH-aB-2pP" firstAttribute="top" secondItem="TWe-sr-ZFQ" secondAttribute="top" constant="8" id="4x6-z4-9CU"/>
+                                                    <constraint firstItem="81x-zY-5fV" firstAttribute="centerX" secondItem="RCH-aB-2pP" secondAttribute="centerX" id="GD2-Bl-gji"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9JB-5d-tS6" secondAttribute="bottom" constant="10" id="HwM-j8-nsm"/>
+                                                    <constraint firstItem="RCH-aB-2pP" firstAttribute="leading" secondItem="TWe-sr-ZFQ" secondAttribute="leading" constant="24" id="WWE-lr-RhZ"/>
+                                                    <constraint firstItem="9JB-5d-tS6" firstAttribute="leading" secondItem="TWe-sr-ZFQ" secondAttribute="leading" constant="24" id="WvX-8H-OJx"/>
+                                                    <constraint firstItem="81x-zY-5fV" firstAttribute="top" secondItem="RCH-aB-2pP" secondAttribute="bottom" constant="2" id="ax0-7b-Q6a"/>
+                                                    <constraint firstItem="9JB-5d-tS6" firstAttribute="top" secondItem="81x-zY-5fV" secondAttribute="bottom" constant="10" id="jRL-pq-QTo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9JB-5d-tS6" secondAttribute="trailing" constant="24" id="uLK-uS-HCA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RCH-aB-2pP" secondAttribute="trailing" constant="24" id="xFr-bX-wrC"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Profile_BG"/>
+                                        <constraints>
+                                            <constraint firstItem="boe-Fe-hXO" firstAttribute="trailing" secondItem="cGh-X0-beC" secondAttribute="trailing" id="2uW-MH-enK"/>
+                                            <constraint firstItem="cGh-X0-beC" firstAttribute="leading" secondItem="4ik-1Z-e3T" secondAttribute="leading" constant="24" id="5KV-SN-n3i"/>
+                                            <constraint firstItem="54K-19-5IC" firstAttribute="top" secondItem="boe-Fe-hXO" secondAttribute="bottom" constant="33" id="81c-wW-VCH"/>
+                                            <constraint firstItem="TWe-sr-ZFQ" firstAttribute="leading" secondItem="4ik-1Z-e3T" secondAttribute="leading" constant="24" id="8we-FY-qOT"/>
+                                            <constraint firstItem="boe-Fe-hXO" firstAttribute="top" secondItem="cGh-X0-beC" secondAttribute="bottom" constant="32" id="A2N-Fx-5iO"/>
+                                            <constraint firstItem="afw-hl-pC0" firstAttribute="centerX" secondItem="4ik-1Z-e3T" secondAttribute="centerX" id="CY4-Y8-fDf"/>
+                                            <constraint firstItem="afw-hl-pC0" firstAttribute="top" secondItem="4ik-1Z-e3T" secondAttribute="top" id="FrQ-BT-EW5"/>
+                                            <constraint firstAttribute="trailing" secondItem="TWe-sr-ZFQ" secondAttribute="trailing" constant="24" id="Io0-tV-1NS"/>
+                                            <constraint firstItem="TWe-sr-ZFQ" firstAttribute="top" secondItem="54K-19-5IC" secondAttribute="bottom" constant="12" id="K4b-i6-uqY"/>
+                                            <constraint firstItem="cGh-X0-beC" firstAttribute="top" secondItem="ecc-7k-C0d" secondAttribute="bottom" constant="40" id="Lid-6k-Qw1"/>
+                                            <constraint firstItem="54K-19-5IC" firstAttribute="leading" secondItem="boe-Fe-hXO" secondAttribute="leading" id="MyP-zx-UoD"/>
+                                            <constraint firstItem="boe-Fe-hXO" firstAttribute="leading" secondItem="cGh-X0-beC" secondAttribute="leading" id="T9k-iw-eL0"/>
+                                            <constraint firstItem="ecc-7k-C0d" firstAttribute="top" secondItem="afw-hl-pC0" secondAttribute="bottom" constant="40" id="ZbX-0F-qqx"/>
+                                            <constraint firstAttribute="bottom" secondItem="TWe-sr-ZFQ" secondAttribute="bottom" constant="10" id="bLZ-j7-WBz"/>
+                                            <constraint firstItem="ecc-7k-C0d" firstAttribute="leading" secondItem="4ik-1Z-e3T" secondAttribute="leading" constant="48" id="sHZ-Jd-ap7"/>
+                                            <constraint firstAttribute="trailing" secondItem="cGh-X0-beC" secondAttribute="trailing" constant="24" id="tmy-JE-rIr"/>
+                                            <constraint firstAttribute="trailing" secondItem="ecc-7k-C0d" secondAttribute="trailing" constant="48" id="uPG-tr-f06"/>
+                                            <constraint firstItem="54K-19-5IC" firstAttribute="trailing" secondItem="boe-Fe-hXO" secondAttribute="trailing" id="zlK-jt-Lp0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4ik-1Z-e3T" firstAttribute="top" secondItem="KzM-L4-gHb" secondAttribute="top" id="7Xs-BS-hHx"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ik-1Z-e3T" secondAttribute="trailing" id="8kv-nk-zke"/>
+                                    <constraint firstItem="4ik-1Z-e3T" firstAttribute="leading" secondItem="KzM-L4-gHb" secondAttribute="leading" id="Imh-Go-Da6"/>
+                                    <constraint firstItem="4ik-1Z-e3T" firstAttribute="width" secondItem="KzM-L4-gHb" secondAttribute="width" id="Yse-AY-sNb"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ik-1Z-e3T" secondAttribute="bottom" id="ZhW-kk-nOn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Profile_BG"/>
+                        <constraints>
+                            <constraint firstItem="KzM-L4-gHb" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="dhT-8B-xnn"/>
+                            <constraint firstItem="KzM-L4-gHb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nb8-Mj-bUf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KzM-L4-gHb" secondAttribute="trailing" id="pbW-p3-U9V"/>
+                            <constraint firstItem="KzM-L4-gHb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="vov-mS-JjB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KzM-L4-gHb" secondAttribute="bottom" id="wKX-uZ-mI0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="l54-0d-kjw">
+                        <barButtonItem key="leftBarButtonItem" title="LogIn" image="chevron.left" catalog="system" id="Lb1-RM-dD1">
+                            <color key="tintColor" name="TFTextColor"/>
+                            <connections>
+                                <action selector="btnBack:" destination="Y6W-OH-hqX" id="mf6-fZ-N9V"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" id="hJk-BD-zN3">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jf2-sa-9gW" customClass="ButtonLightGrey" customModule="JobSeek" customModuleProvider="target">
+                                <rect key="frame" x="267" y="4.6666666666666679" width="92" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Edit"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="educationView" destination="K6t-ny-9bD" id="UZe-6x-p0u"/>
+                        <outlet property="exprienceView" destination="pAB-3u-VMc" id="pry-Tu-yBo"/>
+                        <outlet property="resumeView" destination="TWe-sr-ZFQ" id="PML-bK-zVt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.75362318840587" y="12.723214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gzW-d5-fsf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3fv-xN-LmH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iWO-q1-w8O">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="eye-nd-bvA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihS-7B-jXo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CV" width="32" height="14"/>
+        <image name="Education" width="43" height="43"/>
+        <image name="PDF" width="35" height="14"/>
+        <image name="Profile_pic" width="104" height="104"/>
+        <image name="Spotify" width="43" height="43"/>
+        <image name="Verified_Profile" width="12" height="12"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <namedColor name="Grey-60">
+            <color red="0.58431372549019611" green="0.58823529411764708" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Grey-70">
+            <color red="0.68627450980392157" green="0.69019607843137254" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OnBoardingSecondaryLbl">
+            <color red="0.58431372549019611" green="0.58823529411764708" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ProfilePicBG">
+            <color red="0.86274509803921573" green="0.90196078431372551" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Profile_BG">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SemiBlack">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TFTextColor">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonBackground">
+            <color red="0.054901960784313725" green="0.61568627450980395" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

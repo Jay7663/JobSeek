@@ -5,6 +5,7 @@ import UIKit
 enum Storyboard: String {
     case authentication = "Authentication"
     case onBoarding = "OnBoarding"
+    case profile = "Profile"
 }
 
 /// Storyboarded

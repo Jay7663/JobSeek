@@ -38,7 +38,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kvd-y2-YWu">
                                                     <rect key="frame" x="30" y="379.5" width="334" height="85.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search your job" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UU-A6-YsZ" customClass="MainHeading" customModule="JobSeek" customModuleProvider="target">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search your job" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UU-A6-YsZ" customClass="MainHeadingLabel" customModule="JobSeek" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="334" height="33.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                             <nil key="textColor"/>
