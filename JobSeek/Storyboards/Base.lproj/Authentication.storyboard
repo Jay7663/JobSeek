@@ -111,6 +111,9 @@
                                                         <color key="value" red="0.054901960784313725" green="0.61568627450980395" blue="0.3411764705882353" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3U3-QA-lNt"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fus-kN-klc" userLabel="DividerLabel">
                                                 <rect key="frame" x="24" y="511" width="366" height="16"/>
@@ -468,7 +471,7 @@
             <size key="intrinsicContentSize" width="182" height="31"/>
         </designable>
         <designable name="5c7-1a-Eww">
-            <size key="intrinsicContentSize" width="109" height="34"/>
+            <size key="intrinsicContentSize" width="112.5" height="34"/>
         </designable>
         <designable name="Abg-cn-qsf">
             <size key="intrinsicContentSize" width="100" height="16"/>
@@ -480,10 +483,10 @@
             <size key="intrinsicContentSize" width="183.5" height="17"/>
         </designable>
         <designable name="Kgs-Wr-xXX">
-            <size key="intrinsicContentSize" width="134.5" height="34"/>
+            <size key="intrinsicContentSize" width="140" height="34"/>
         </designable>
         <designable name="LWH-Yn-Ymr">
-            <size key="intrinsicContentSize" width="132.5" height="34"/>
+            <size key="intrinsicContentSize" width="137.5" height="34"/>
         </designable>
         <designable name="MYj-v7-QcC">
             <size key="intrinsicContentSize" width="151" height="29"/>
@@ -495,19 +498,19 @@
             <size key="intrinsicContentSize" width="162.5" height="17"/>
         </designable>
         <designable name="d9S-4R-hSu">
-            <size key="intrinsicContentSize" width="109" height="34"/>
+            <size key="intrinsicContentSize" width="112.5" height="34"/>
         </designable>
         <designable name="fUO-La-HCP">
             <size key="intrinsicContentSize" width="210" height="32.5"/>
         </designable>
         <designable name="klc-vc-3SL">
-            <size key="intrinsicContentSize" width="132.5" height="34"/>
+            <size key="intrinsicContentSize" width="137.5" height="34"/>
         </designable>
         <designable name="qeT-UX-fLK">
             <size key="intrinsicContentSize" width="100" height="16"/>
         </designable>
         <designable name="xYc-W8-h5g">
-            <size key="intrinsicContentSize" width="193" height="34"/>
+            <size key="intrinsicContentSize" width="203" height="34"/>
         </designable>
         <designable name="y9A-Kn-wmy">
             <size key="intrinsicContentSize" width="213" height="31"/>
